@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour | Landing Page</title>
+    <!-- Boxicons font awesome file -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Animate CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Doto:wght@100..900&family=Josefin+Sans:ital,wght@0,40..700;1,40..700&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-chevron-up'></i></button>
+    <header id="header">
+        <div class="header-container">
+            <nav class="navigation-bar">
+                <div class="brand">
+                    <h1>`The | Tour`</h1>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#hero-1">Hero-1</a></li>
+                        <li><a href="#hero-2">Hero-2</a></li>
+                        <li><a href="#hero-3">Hero-3</a></li>
+                        <li><a href="#hero-4">Hero-4</a></li>
+                        <li><a href="#hero-5">Hero-5</a></li>
+                        <li><a href="#hero-6">Hero-6</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Sections -->
+    <section id="hero-1">
+        <div class="blur-container">
+            <span id="h1">
+                <h1>***London***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                Standing at 1,356 million square kilometres (523 million square miles), it is the most populous major city in the European
+                Union by both area and population.
+            </p>
+        </div>
+    </section>
+    <section id="hero-2">
+        <div class="blur-container">
+            <span id="h2"> 
+                <h1>***Golden Eagle***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                It is native to the Indian subcontinent and the Maldives, and it is the largest and strongest species in the
+                world.
+            </p>
+        </div>
+    </section>
+    <section id="hero-3">
+        <div class="blur-container">
+            <span id="h3">
+                <h1>***Swan***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                It is one of the few bird species to exhibit a complete migration.
+            </p>
+        </div>
+    </section>
+    <section id="hero-4">
+        <div class="blur-container">
+            <span id="h4">
+                <h1>***Penguin***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                They are native to the Indian Ocean,the Pacific Ocean, and the Southern Hemisphere. Penguins are the only terrestrial mammals that can fly.
+            </p>
+        </div>
+    </section>
+    <section id="hero-5">
+        <div class="blur-container">
+            <span id="h5">
+                <h1>***Sunset***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                It is caused by the movement of the Earth's rotation around its axis.
+            </p>
+        </div>
+    </section>
+    <section id="hero-6">
+        <div class="blur-container">
+            <span id="h6">
+                <h1>***Cuckoos Bird***</h1>
+            </span>
+            <p class="animate__animated animate__swing">
+                It is one of the few bird species that exhibit a complete migration.
+            </p>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // Text animation-1
+        var typed = new Typed('#h1', {
+            strings: ['London is the capital and most populous city of England and the United Kingdom'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+        // Text animation-2
+        var typed = new Typed('#h2', {
+            strings: ['The Golden Eagle, also known as the Great Eagle, is the largest bird of the family Sphingidae.'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+        // Text animation-3
+        var typed = new Typed('#h3', {
+            strings: ['The Swan is a species of bird native to the Indian subcontinent, particularly in the Himalayan mountain ranges.'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+        // Text animation-4
+        var typed = new Typed('#h4', {
+            strings: ['Penguins are the largest marine mammals of the family Eudyptidae.'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+        // Text animation-5
+        var typed = new Typed('#h5', {
+            strings: ['Sunset is a natural phenomenon that occurs when the sun sets over a large area.'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+        // Text animation-6
+        var typed = new Typed('#h6', {
+            strings: ['The Cuckoo is a species of bird native to the Indian subcontinent, particularly in the Himalayan mountain ranges.'],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
